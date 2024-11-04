@@ -1,0 +1,57 @@
+/*============
+Page variables
+==============*/
+
+:root {
+    /*color scheme*/
+    --col-background-dark: hsl(0, 0%, 20%);
+    --col-background-darker: hsl(0, 0%, 12%);
+    --col-background-darkest: hsl(0, 0%, 8%);
+    --col-highlight: hsl(75, 94%, 57%);
+    --col-text: hsl(0, 0%, 100%);
+  
+    /*fonts*/
+    --font-main: Verdana, sans-serif;
+    --font-heading: "Macondo", cursive;
+    --font-code: "Roboto Mono", monospace;
+  }
+  
+  /*======================================
+    Back to Basics (reset browser defaults)
+    =======================================*/
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  body * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  /*reset default font - never shall Times New Roman be seen again!*/
+  :is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
+    font-family: Verdana, sans-serif;
+  }
+  
+  :where(ul, ol) {
+    list-style: none;
+    margin: 0;
+  }
+  
+  :where(ul, ol) a {
+    text-decoration: none;
+    color: inherit;
+  }
