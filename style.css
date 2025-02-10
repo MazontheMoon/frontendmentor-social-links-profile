@@ -79,6 +79,30 @@ Page variables
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  figure {
+    display: grid;
+    place-items: center;
+    padding-bottom: 1rem;
+  }
+
+  figure img {
+    border-radius: 50%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--col-button);
+    text-align: center;
   }
 
   /*===============
