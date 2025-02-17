@@ -4,16 +4,18 @@ Page variables
 
 :root {
     /*color scheme*/
-    --col-background-dark: hsl(0, 0%, 20%);
-    --col-background-darker: hsl(0, 0%, 12%);
-    --col-background-darkest: hsl(0, 0%, 8%);
+    --col-bg-page: hsl(0, 0%, 8%);
+    --col-button: hsl(0, 0%, 20%);
+    --col-bg-card: hsl(0, 0%, 12%);
     --col-highlight: hsl(75, 94%, 57%);
     --col-text: hsl(0, 0%, 100%);
   
     /*fonts*/
-    --font-main: Verdana, sans-serif;
-    --font-heading: "Macondo", cursive;
-    --font-code: "Roboto Mono", monospace;
+    --font-main: Inter, Verdana, sans-serif;
+
+    --fontwght-header: 700;
+    --fontwght-subheader: 600;
+    --fontwght-text: 400;
   }
   
   /*======================================
@@ -24,8 +26,8 @@ Page variables
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.25;
   }
   
   body * {
@@ -55,3 +57,87 @@ Page variables
     text-decoration: none;
     color: inherit;
   }
+
+  /*===========
+   Page Layout
+  =============*/
+  html {
+    height: 100%;
+    position: relative;
+  }
+  
+  body {
+    background-color: var(--col-bg-page);
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  main {
+    background-color: var(--col-bg-card);
+    max-width: clamp(320px, 375px, 25vw);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+  figure {
+    display: grid;
+    place-items: center;
+    padding-bottom: 1rem;
+  }
+
+  figure img {
+    border-radius: 50%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  ul li {
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--col-button);
+    text-align: center;
+  }
+
+  /*===============
+    Text and Images
+  =================*/
+
+  h1, h2, h3, p, a {
+    font-family: var(--font-main) ;
+  }
+
+  h1 {
+    font-weight: var(--fontwght-header);
+  }
+
+  h2 {
+    font-weight: var(--fontwght-subheader);
+  }
+
+  h3, li, p {
+    font-weight: var(--fontwght-text);
+  }
+
+  
+
+  /*frontend mentor attribution*/
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+    padding-block-end: 1em;;
+  }
+  
+  .attribution a { 
+    color: hsl(228, 45%, 44%); 
+  }
+
+  /*add LVHA links*/
