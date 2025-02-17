@@ -92,6 +92,7 @@ Page variables
 
   figure img {
     border-radius: 50%;
+    margin-bottom: 1rem;
   }
 
   ul {
@@ -100,7 +101,6 @@ Page variables
 
   ul li {
     margin: 0.5rem;
-    padding: 1rem;
     background-color: var(--col-button);
     text-align: center;
   }
@@ -109,22 +109,41 @@ Page variables
     Text and Images
   =================*/
 
-  h1, h2, h3, p, a {
+  figcaption, p, a {
     font-family: var(--font-main) ;
+    color: var(--col-text);
   }
 
-  h1 {
+  figcaption {
     font-weight: var(--fontwght-header);
+    font-size: 1.5rem;
   }
 
-  h2 {
+  .subheader {
     font-weight: var(--fontwght-subheader);
+    color: var(--col-highlight);
   }
 
-  h3, li, p {
+  .quote {
+    margin: 1rem;
+    font-size: smaller;
+    opacity: 0.7;
+  }
+
+  li, p , a{
     font-weight: var(--fontwght-text);
   }
 
+  li {
+    border-radius: 0.5rem;
+  }
+
+  li a { 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
   
 
   /*frontend mentor attribution*/
