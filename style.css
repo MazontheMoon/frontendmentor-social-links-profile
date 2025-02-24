@@ -92,6 +92,7 @@ Page variables
 
   figure img {
     border-radius: 50%;
+    margin-block-end: 1rem;
   }
 
   ul {
@@ -99,33 +100,59 @@ Page variables
   }
 
   ul li {
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 1rem 0;
     background-color: var(--col-button);
     text-align: center;
+    border-radius: 0.5rem;
   }
 
   /*===============
     Text and Images
   =================*/
 
-  h1, h2, h3, p, a {
+  figcaption, p, a {
     font-family: var(--font-main) ;
+    color: var(--col-text);
   }
 
-  h1 {
+  figcaption {
     font-weight: var(--fontwght-header);
+    font-size: 1.5rem;
   }
 
-  h2 {
+  .subheader {
     font-weight: var(--fontwght-subheader);
+    color: var(--col-highlight);
   }
 
-  h3, li, p {
+  .quote {
+    margin: 1rem;
+    font-size: smaller;
+    opacity: 0.7;
+  }
+
+  li, p , a{
     font-weight: var(--fontwght-text);
   }
 
+   /*======
+    Buttons
+    =======*/
+
+  li a { 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
   
+  li:has(:active, :hover) { 
+    background-color: var(--col-highlight);
+  }
+
+  li:has(:active, :hover) a { 
+    color: var(--col-button);
+  }
 
   /*frontend mentor attribution*/
   .attribution { 
@@ -133,11 +160,10 @@ Page variables
     text-align: center; 
     position: absolute;
     bottom: 0;
-    padding-block-end: 1em;;
+    padding-block-end: 1em;
+    color: var(--col-text);
   }
   
   .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--col-highlight); 
   }
-
-  /*add LVHA links*/
