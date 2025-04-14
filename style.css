@@ -151,7 +151,8 @@ Page variables
   }
 
   li:has(:active, :hover) a { 
-    color: var(--col-button);
+    color: var(--col-bg-page);
+    font-weight: bold;
   }
 
   /*frontend mentor attribution*/
