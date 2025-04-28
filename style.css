@@ -43,7 +43,7 @@ Page variables
     -moz-box-sizing: border-box;
   }
   
-  /*reset default font - never shall Times New Roman be seen again!*/
+  /*reset default font*/
   :is(h1, h2, h3, h4, h5, h6, p, a, li, figcaption) {
     font-family: Verdana, sans-serif;
   }
@@ -75,7 +75,7 @@ Page variables
 
   main {
     background-color: var(--col-bg-card);
-    max-width: clamp(320px, 375px, 25vw);
+    max-width: clamp(320px, 390px, 25vw);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
